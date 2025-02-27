@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Smart Management</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>GitHub Repository Smart Management / Admin Dashboard</h1>
+
+    <p>Select a student to manage their repository:</p>
+    <select id="students-dropdown">
+        <option value="">-- Select a Student --</option>
+    </select>
+
+    <div id="repo-summary">
+        <h2>Repository Summary</h2>
+        <p><strong>Total Commits:</strong> <span id="total-commits">0</span></p>
+        <p><strong>Total Files:</strong> <span id="total-files">0</span></p>
+    </div>
+
+    <p>Select a file from the repository dropdown to view its content:</p>
+    <select id="file-dropdown">
+        <option value="">-- Select a file --</option>
+    </select>
+
+    <h2>File Content</h2>
+    <pre id="file-content">Select a file to view its content.</pre>
+
+    <footer>
+        <p>&copy; 2024 GitHub Repository Management</p>
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
+</html>

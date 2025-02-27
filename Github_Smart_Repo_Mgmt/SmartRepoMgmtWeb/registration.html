@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <label for="userId">User ID:</label>
+            <input type="text" id="userId" name="userId" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="userType">User Type:</label>
+            <select id="userType" name="userType" required>
+                <option value="admin">Admin</option>
+                <option value="student">Student</option>
+            </select>
+
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="githubUserId">GitHub User ID:</label>
+            <input type="text" id="githubUserId" name="githubUserId" required>
+            
+            <label for="githubRepoName">GitHub Repo Name:</label>
+            <input type="text" id="githubRepoName" name="githubRepoName" required>
+
+            <label for="githubAPIToken">GitHub API Token:</label>
+            <input type="password" id="githubAPIToken" name="githubAPIToken" required>
+            
+            <button type="button" onclick="registerUser()">Register</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="registration.js"></script>
+</body>
+</html>

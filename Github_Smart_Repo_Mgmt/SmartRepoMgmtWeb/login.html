@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        .option-container {
+            display: flex;
+            justify-content: flex-start; /* Align items to the start of the row */
+            gap: 20px; /* Space between options */
+            align-items: center; /* Center align vertically */
+        }
+        .radio-label {
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center; /* Align text with the radio button */
+        }
+        .radio-input[type="radio"] {
+            margin-right: 8px; /* Space between radio button and label text */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" name="userId" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="option-container">
+                <label for="userType">User Type:</label>
+                <label for="admin" class="radio-label">
+                    <input type="radio" id="admin" name="role" value="ADMIN" class="radio-input">
+                    ADMIN
+                </label>
+                <label for="student" class="radio-label">
+                    <input type="radio" id="student" name="role" value="STUDENT" checked class="radio-input">
+                    STUDENT
+                </label>                
+                <!--                
+                <select id="userType" name="userType" required>
+                    <option value="student">Student</option>
+                    <option value="admin">Admin</option>
+                </select>
+                -->
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div id="error-message"></div>
+        <div id="success-message"></div>
+        
+        <!-- Registration Link -->
+        <p class="register-link">
+            Don't have an account? <a href="registration.html">Register here</a>
+        </p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

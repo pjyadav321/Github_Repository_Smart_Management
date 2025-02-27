@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url(loginPage.jpg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Login container */
+.login-container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8), 0 4px 15px rgba(0, 0, 0, 0.6);
+    width: 300px;
+    text-align: center;
+    animation: slideUp 1s ease-out;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Input fields and labels */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    animation: fadeIn 2s ease-in-out;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: aliceblue;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6200ea;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+button:hover {
+    background-color: #3700b3;
+}
+
+/* Success Message Box */
+.success-message {
+    display: none;
+    background-color: white;
+    color: green;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Error and success messages */
+#error-message {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Registration link */
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #00ea46;
+    text-decoration: none;  
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+

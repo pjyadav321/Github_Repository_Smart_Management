@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Smart Management</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <header>
+        <h1>GitHub Repository Smart Management / Student Dashboard</h1>
+    </header>
+    <main>
+        <section id="repo-summary" class="card">
+            <h2>Repository Summary</h2>
+            <p><strong>Total Commits:</strong> <span id="total-commits">Loading...</span></p>
+            <p><strong>Total Files:</strong> <span id="total-files">Loading...</span></p>
+        </section>
+
+        <section id="file-viewer" class="card">
+            <h2>View Repository Files</h2>
+            <p>Select a file from the repository to view its content:</p>
+            <select id="file-dropdown">
+                <option value="">-- Select a file --</option>
+            </select>
+            <h2>File Content</h2>
+            <pre id="file-content">Select a file to view its content.</pre>
+        </section>
+
+        <section id="upload-section" class="card">
+            <h2>Add File to Repository</h2>
+            <input type="file" id="file-input">
+            <button id="upload-button">Upload File</button>
+            <p id="upload-status"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 GitHub Repository Management</p>
+    </footer>
+    <script src="student.js"></script>
+</body>
+</html>
