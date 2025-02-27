@@ -68,4 +68,5 @@ Endpoint: POST /api/users/register
     ├── exception/         # Custom exception handling
     
 /src/main/resources/
+
     ├── application.properties  # Configuration for database and server
