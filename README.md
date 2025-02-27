@@ -52,6 +52,7 @@ Endpoint: POST /api/users/register
 **Response:**"User registered successfully"
 
 **Project Structure**
+
 /src/main/java/com/login/
 
     ├── controller/        # Handles API requests (UserController, GitHubController)
