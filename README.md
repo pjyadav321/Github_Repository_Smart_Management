@@ -53,6 +53,7 @@ Endpoint: POST /api/users/register
 
 **Project Structure**
 /src/main/java/com/login/
+
     ├── controller/        # Handles API requests (UserController, GitHubController)
     
     ├── service/           # Business logic (UserService)
