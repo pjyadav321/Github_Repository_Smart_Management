@@ -54,10 +54,16 @@ Endpoint: POST /api/users/register
 **Project Structure**
 /src/main/java/com/login/
     ├── controller/        # Handles API requests (UserController, GitHubController)
+    
     ├── service/           # Business logic (UserService)
+    
     ├── entity/            # Data models (User, GitHubRepository, UserType)
+    
     ├── repository/        # Database operations (UserRepository)
+    
     ├── DTO/               # Data Transfer Objects (LoginRequest, LoginResponse)
+    
     ├── exception/         # Custom exception handling
+    
 /src/main/resources/
     ├── application.properties  # Configuration for database and server
